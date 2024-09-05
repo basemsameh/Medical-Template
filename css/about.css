@@ -1,0 +1,182 @@
+.home .homeContent {
+  background-image: linear-gradient(
+      90deg,
+      rgba(12, 184, 182, 0.05),
+      rgba(12, 184, 182, 0.05)
+    ),
+    url(../images/cover-about.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+}
+
+.home .homeContent .container div {
+  bottom: -4px;
+}
+
+.home .homeContent .container div .nav-link:hover {
+  color: var(--main-color) !important;
+}
+
+/* Main */
+main h1 {
+  font-size: 50px;
+}
+
+main .mainTitle {
+  margin-bottom: 300px;
+}
+
+/* About Weeb Clinic Section */
+.weebClinic .container a {
+  margin-top: -250px !important;
+}
+
+.weebClinic .container .buttonBox {
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 25px;
+  border-radius: 50px 50px 0 50px;
+  width: 330px;
+  transition-duration: 0.1s;
+}
+
+.weebClinic .container .buttonBox:hover {
+  background-color: var(--blue) !important;
+  color: var(--white) !important;
+}
+
+.weebClinic .container .buttonBox i {
+  background-color: var(--blue);
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.weebClinic .container a:hover .buttonBox i {
+  background-color: var(--white) !important;
+  color: var(--black) !important;
+}
+
+/* Counter */
+.weebClinic .container .counter div:hover {
+  transform: translateY(-20px);
+}
+
+.weebClinic .container .counter div:hover h3 {
+  background-color: var(--main-color) !important;
+}
+
+.weebClinic .container .counter div:hover p {
+  color: var(--blue) !important;
+}
+
+.weebClinic .container .counter h3 {
+  font-size: 64px;
+}
+
+/* Misson Section */
+.mission .container .content .rowIcons figure:hover i {
+  background-color: var(--blue) !important;
+}
+
+/* experts Section */
+.experts .container .expert button {
+  width: 50px;
+}
+
+.experts .container .expert button::before {
+  content: "Apply Now";
+  color: var(--white);
+  background-color: var(--blue);
+  position: absolute;
+  font-size: 14px;
+  width: 100px;
+  padding: 5px 0 8px;
+  border-radius: 5px;
+  top: -38px;
+  opacity: 0;
+  transition: all 0.2s linear 0s;
+}
+
+.experts .container .expert button:hover::before {
+  opacity: 1;
+}
+
+.experts .container .expert button:hover {
+  color: var(--white) !important;
+}
+
+/* Hirin Section */
+.hiring .container {
+  background-image: linear-gradient(
+      to right,
+      rgba(29, 45, 94, 0.8),
+      rgba(29, 45, 94, 0.8)
+    ),
+    url(../images/cover-about.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hiring .container a {
+  height: 50px;
+  width: 170px;
+  position: relative;
+}
+
+.hiring .container a::before {
+  content: "Excellent Choise";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-color);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: inherit;
+  font-weight: inherit;
+  opacity: 0;
+  transition: all 0.15s linear 0s;
+  padding: inherit;
+}
+
+.hiring .container a:hover::before {
+  opacity: 1;
+}
+
+/* SLider Section */
+.slideSec {
+  margin-bottom: 150px;
+}
+
+.slideSec .row .slide .carousel-indicators {
+  bottom: -80px;
+}
+
+.slideSec .row .slide .carousel-indicators .indBtn {
+  background-color: var(--main-color);
+  border: none;
+}
+
+@media (width >= 764px) {
+  .weebClinic .container .counter {
+    width: 90% !important;
+    position: absolute !important;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .mission {
+    margin-top: 150px;
+  }
+}

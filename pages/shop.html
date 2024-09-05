@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/all.min.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/about.css">
+  <link rel="stylesheet" href="../css/shop.css">
+  <title>Medical Template</title>
+</head>
+
+<body>
+  <!-- Header (Home) -->
+  <header class="home position-relative" id="home">
+    <!-- TOP Link (Call) -->
+    <section class="callLink container position-relative bg-color text-center pb-2 pt-5 rounded-5">
+      <a href="tel:+1(800) 345 678" class="text-decoration-none text-white">
+        For Emergency call <strong>+1(800) 345 678</strong>
+      </a>
+    </section>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../images/logo2x.png" alt="Logo" class="w-100">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse p-0" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item mx-0 me-lg-3">
+              <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-3">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html">FAQ'S</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-3">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item dropdown mx-lg-2">
+              <a class="nav-link dropdown-toggle active" href="shop.html" role="button" aria-expanded="false">
+                Shop
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item active" href="shop.html">All Prodcuts</a></li>
+                <li><a class="dropdown-item" href="account.html">My account</a></li>
+                <li><a class="dropdown-item" href="cart.html">Cart</a></li>
+                <li><a class="dropdown-item checkoutHref" href="#">Checkout</a></li>
+              </ul>
+            </li>
+            <li class="nav-item mx-0 mx-lg-3">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <a href="appointment.html"
+            class="btn fit rounded-5 py-2 px-4 bg-blue text-white d-flex justify-content-center align-items-center">
+            Book Appointment <i class="fa-solid fa-house-chimney ms-2"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- Content of home -->
+    <section class="homeContent">
+      <div class="container h-100 d-flex align-items-center position-relative">
+        <h2 class="weight fs-1 text-blue">Shop</h2>
+        <div class="position-absolute start-0 bg-white py-3 text-black-50 px-4 fit rounded-3">
+          <a href="../index.html" class="nav-link d-inline-block">
+            <i class="fa-solid fa-house"></i>
+          </a>
+          <i class="fa-solid fa-angles-right mx-2"></i> Products
+        </div>
+      </div>
+    </section>
+    <!-- Go Up Button -->
+    <button id="upBtn"
+      class="btn d-none position-fixed text-white bg-color p-3 d-flex align-items-centefs-5 rounded-circle">
+      <i class="fa-solid fa-angle-up"></i>
+    </button>
+  </header>
+  <!-- Main -->
+  <main>
+    <section class="shop">
+      <div class="container">
+        <!-- Buttons -->
+        <ul class="nav nav-pills mb-3 fit mx-auto" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all"
+              type="button" role="tab" aria-controls="pills-all" aria-selected="true">All</button>
+          </li>
+          <li class="nav-item mx-2" role="presentation">
+            <button class="nav-link" id="pills-lowToHight-tab" data-bs-toggle="pill" data-bs-target="#pills-lowToHight"
+              type="button" role="tab" aria-controls="pills-lowToHight" aria-selected="false">Price low to
+              hight</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-hightToLow-tab" data-bs-toggle="pill" data-bs-target="#pills-hightToLow"
+              type="button" role="tab" aria-controls="pills-hightToLow" aria-selected="false">Price hight to
+              low</button>
+          </li>
+          <li class="nav-item ms-2" role="presentation">
+            <button class="nav-link" id="pills-topRated-tab" data-bs-toggle="pill" data-bs-target="#pills-topRated"
+              type="button" role="tab" aria-controls="pills-topRated" aria-selected="false">Top Rated
+            </button>
+          </li>
+        </ul>
+        <!-- Tab contents -->
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab"
+            tabindex="0">
+            <!-- Products -->
+            <div class="row">
+              <!-- Product -->
+              <div class="col-12 col-md-6 col-lg-4 p-3">
+                <figure class="m-0 position-relative rounded-3 border">
+                  <img src="../images/shop-1.jpg" alt="Product" class="w-100 rounded-3">
+                  <span class="position-absolute fs-4 weight">
+                    $<span class="price">29</span>
+                  </span>
+                  <span style="bottom: -20px;" class="shadow position-absolute translate-middle-x start-50 bg-blue 
+                    text-white p-2 rounded-2 text-center w-75 weight fs-5">Blood Bag
+                  </span>
+                  <button data-price="29" class="addBtn opacity-0  btn position-absolute text-white bg-color">
+                    <i class="fa-solid fa-cart-shopping me-2"></i> Add to cart
+                  </button>
+                </figure>
+              </div>
+              <!-- Product 2 -->
+              <div class="col-12 col-md-6 col-lg-4 p-3 mb-4">
+                <figure class="m-0 position-relative rounded-3 border">
+                  <img src="../images/shop-2.jpg" alt="Product" class="w-100 rounded-3">
+                  <span class="position-absolute fs-4 weight">
+                    $<span class="price">99</span>
+                  </span>
+                  <span style="bottom: -20px;" class="shadow position-absolute translate-middle-x start-50 bg-blue 
+                    text-white p-2 rounded-2 text-center w-75 weight fs-5">Blue Hospital Stretcher
+                  </span>
+                  <button data-price="99" class="addBtn opacity-0  btn position-absolute text-white bg-color">
+                    <i class="fa-solid fa-cart-shopping me-2"></i> Add to cart
+                  </button>
+                </figure>
+              </div>
+              <!-- Product 3 -->
+              <div class="col-12 col-md-6 col-lg-4 p-3 mb-4">
+                <figure class="m-0 position-relative rounded-3 border">
+                  <img src="../images/shop-3.jpg" alt="Product" class="w-100 rounded-3">
+                  <span class="position-absolute fs-4 weight">
+                    $<span class="price">39</span>
+                  </span>
+                  <span style="bottom: -20px;" class="shadow position-absolute translate-middle-x start-50 bg-blue 
+                    text-white p-2 rounded-2 text-center w-75 weight fs-5">C-Arm X-ray Machine
+                  </span>
+                  <button data-price="39" class="addBtn opacity-0  btn position-absolute text-white bg-color">
+                    <i class="fa-solid fa-cart-shopping me-2"></i> Add to cart
+                  </button>
+                </figure>
+              </div>
+              <!-- Product 4 -->
+              <div class="col-12 col-md-6 col-lg-4 p-3 mb-4">
+                <figure class="m-0 position-relative rounded-3 border">
+                  <img src="../images/shop-4.jpg" alt="Product" class="w-100 rounded-3">
+                  <span class="position-absolute fs-4 weight">
+                    $<span class="price">69</span>
+                  </span>
+                  <span style="bottom: -20px;" class="shadow position-absolute translate-middle-x start-50 bg-blue 
+                    text-white p-2 rounded-2 text-center w-75 weight fs-5">Dentistry Chair
+                  </span>
+                  <button data-price="69" class="addBtn opacity-0  btn position-absolute text-white bg-color">
+                    <i class="fa-solid fa-cart-shopping me-2"></i> Add to cart
+                  </button>
+                </figure>
+              </div>
+              <!-- Product 5 -->
+              <div class="col-12 col-md-6 col-lg-4 p-3 mb-4">
+                <figure class="m-0 position-relative rounded-3 border">
+                  <img src="../images/shop-5.jpg" alt="Product" class="w-100 rounded-3">
+                  <span class="position-absolute fs-4 weight">
+                    $<span class="price">44</span>
+                  </span>
+                  <span style="bottom: -20px;" class="shadow position-absolute translate-middle-x start-50 bg-blue 
+                    text-white p-2 rounded-2 text-center w-75 weight fs-5">Doctor Stethoscope
+                  </span>
+                  <button data-price="44" class="addBtn opacity-0  btn position-absolute text-white bg-color">
+                    <i class="fa-solid fa-cart-shopping me-2"></i> Add to cart
+                  </button>
+                </figure>
+              </div>
+              <!-- Product 6 -->
+              <div class="col-12 col-md-6 col-lg-4 p-3 mb-4">
+                <figure class="m-0 position-relative rounded-3 border">
+                  <img src="../images/shop-6.jpg" alt="Product" class="w-100 rounded-3">
+                  <span class="position-absolute fs-4 weight">
+                    $<span class="price">47</span>
+                  </span>
+                  <span style="bottom: -20px;" class="shadow position-absolute translate-middle-x start-50 bg-blue 
+                    text-white p-2 rounded-2 text-center w-75 weight fs-5">Hospital Privacy Screen
+                  </span>
+                  <button data-price="47" class="addBtn opacity-0  btn position-absolute text-white bg-color">
+                    <i class="fa-solid fa-cart-shopping me-2"></i> Add to cart
+                  </button>
+                </figure>
+              </div>
+              <!-- Product 7 -->
+              <div class="col-12 col-md-6 col-lg-4 p-3 mb-4 mb-md-0">
+                <figure class="m-0 position-relative rounded-3 border">
+                  <img src="../images/shop-7.jpg" alt="Product" class="w-100 rounded-3">
+                  <span class="position-absolute fs-4 weight">
+                    $<span class="price">79</span>
+                  </span>
+                  <span style="bottom: -20px;" class="shadow position-absolute translate-middle-x start-50 bg-blue 
+                    text-white p-2 rounded-2 text-center w-75 weight fs-5">Medical Stethoscope
+                  </span>
+                  <button data-price="79" class="addBtn opacity-0  btn position-absolute text-white bg-color">
+                    <i class="fa-solid fa-cart-shopping me-2"></i> Add to cart
+                  </button>
+                </figure>
+              </div>
+              <!-- Product 8 -->
+              <div class="col-12 col-md-6 col-lg-4 p-3">
+                <figure class="m-0 position-relative rounded-3 border">
+                  <img src="../images/shop-8.jpg" alt="Product" class="w-100 rounded-3">
+                  <span class="position-absolute fs-4 weight">
+                    $<span class="price">79</span>
+                  </span>
+                  <span style="bottom: -20px;" class="shadow position-absolute translate-middle-x start-50 bg-blue 
+                    text-white p-2 rounded-2 text-center w-75 weight fs-5">Medical X-Ray Scanner
+                  </span>
+                  <button data-price="79" class="addBtn opacity-0  btn position-absolute text-white bg-color">
+                    <i class="fa-solid fa-cart-shopping me-2"></i> Add to cart
+                  </button>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-lowToHight" role="tabpanel" aria-labelledby="pills-lowToHight-tab"
+            tabindex="0">
+            <div class="row">
+              <!-- Product -->
+              <div class="col-12 col-md-6 col-lg-4 p-3">
+                <figure class="m-0 position-relative rounded-3 border">
+                  <img src="../images/shop-1.jpg" alt="Product" class="w-100 rounded-3">
+                  <span class="position-absolute fs-4 weight">
+                    $<span class="price">29</span>
+                  </span>
+                  <span style="bottom: -20px;" class="shadow position-absolute translate-middle-x start-50 bg-blue 
+                    text-white p-2 rounded-2 text-center w-75 weight fs-5">Blood Bag
+                  </span>
+                  <button data-price="29" class="addBtn opacity-0  btn position-absolute text-white bg-color">
+                    <i class="fa-solid fa-cart-shopping me-2"></i> Add to cart
+                  </button>
+                </figure>
+              </div>
+              <!-- Product 3 -->
+              <div class="col-12 col-md-6 col-lg-4 p-3 mb-4">
+                <figure class="m-0 position-relative rounded-3 border">
+                  <img src="../images/shop-3.jpg" alt="Product" class="w-100 rounded-3">
+                  <span class="position-absolute fs-4 weight">
+                    $<span class="price">39</span>
+                  </span>
+                  <span style="bottom: -20px;" class="shadow position-absolute translate-middle-x start-50 bg-blue 
+                                                text-white p-2 rounded-2 text-center w-75 weight fs-5">C-Arm X-ray
+                    Machine
+                  </span>
+                  <button data-price="39" class="addBtn opacity-0  btn position-absolute text-white bg-color">
+                    <i class="fa-solid fa-cart-shopping me-2"></i> Add to cart
+                  </button>
+                </figure>
+              </div>
+              <!-- Product 5 -->
+              <div class="col-12 col-md-6 col-lg-4 p-3 mb-4">
+                <figure class="m-0 position-relative rounded-3 border">
+                  <img src="../images/shop-5.jpg" alt="Product" class="w-100 rounded-3">
+                  <span class="position-absolute fs-4 weight">
+                    $<span class="price">44</span>
+                  </span>
+                  <span style="bottom: -20px;" class="shadow position-absolute translate-middle-x start-50 bg-blue 
+                    text-white p-2 rounded-2 text-center w-75 weight fs-5">Doctor Stethoscope
+                  </span>
+                  <button data-price="44" class="addBtn opacity-0  btn position-absolute text-white bg-color">
+                    <i class="fa-solid fa-cart-shopping me-2"></i> Add to cart
+                  </button>
+                </figure>
+              </div>
+              <!-- Product 6 -->
+              <div class="col-12 col-md-6 col-lg-4 p-3 mb-4">
+                <figure class="m-0 position-relative rounded-3 border">
+                  <img src="../images/shop-6.jpg" alt="Product" class="w-100 rounded-3">
+                  <span class="position-absolute fs-4 weight">
+                    $<span class="price">47</span>
+                  </span>
+                  <span style="bottom: -20px;" class="shadow position-absolute translate-middle-x start-50 bg-blue 
+                    text-white p-2 rounded-2 text-center w-75 weight fs-5">Hospital Privacy
+                    Screen
+                  </span>
+                  <button data-price="47" class="addBtn opacity-0  btn position-absolute text-white bg-color">
+                    <i class="fa-solid fa-cart-shopping me-2"></i> Add to cart
+                  </button>
+                </figure>
+              </div>
+              <!-- Product 4 -->
+              <div class="col-12 col-md-6 col-lg-4 p-3 mb-4">
+                <figure class="m-0 position-relative rounded-3 border">
+                  <img src="../images/shop-4.jpg" alt="Product" class="w-100 rounded-3">
+                  <span class="position-absolute fs-4 weight">
+                    $<span class="price">69</span>
+                  </span>
+                  <span style="bottom: -20px;" class="shadow position-absolute translate-middle-x start-50 bg-blue 
+                                                text-white p-2 rounded-2 text-center w-75 weight fs-5">Dentistry Chair
+                  </span>
+                  <button data-price="69" class="addBtn opacity-0  btn position-absolute text-white bg-color">
+                    <i class="fa-solid fa-cart-shopping me-2"></i> Add to cart
+                  </button>
+                </figure>
+              </div>
+              <!-- Product 7 -->
+              <div class="col-12 col-md-6 col-lg-4 p-3 mb-4 mb-md-0">
+                <figure class="m-0 position-relative rounded-3 border">
+                  <img src="../images/shop-7.jpg" alt="Product" class="w-100 rounded-3">
+                  <span class="position-absolute fs-4 weight">
+                    $<span class="price">79</span>
+                  </span>
+                  <span style="bottom: -20px;" class="shadow position-absolute translate-middle-x start-50 bg-blue 
+                    text-white p-2 rounded-2 text-center w-75 weight fs-5">Medical Stethoscope
+                  </span>
+                  <button data-price="79" class="addBtn opacity-0  btn position-absolute text-white bg-color">
+                    <i class="fa-solid fa-cart-shopping me-2"></i> Add to cart
+                  </button>
+                </figure>
+              </div>
+              <!-- Product 8 -->
+              <div class="col-12 col-md-6 col-lg-4 p-3">
+                <figure class="m-0 position-relative rounded-3 border">
+                  <img src="../images/shop-8.jpg" alt="Product" class="w-100 rounded-3">
+                  <span class="position-absolute fs-4 weight">
+                    $<span class="price">79</span>
+                  </span>
+                  <span style="bottom: -20px;" class="shadow position-absolute translate-middle-x start-50 bg-blue 
+                      text-white p-2 rounded-2 text-center w-75 weight fs-5">Medical X-Ray
+                    Scanner
+                  </span>
+                  <button data-price="79" class="addBtn opacity-0  btn position-absolute text-white bg-color">
+                    <i class="fa-solid fa-cart-shopping me-2"></i> Add to cart
+                  </button>
+                </figure>
+              </div>
+              <!-- Product 2 -->
+              <div class="col-12 col-md-6 col-lg-4 p-3 mb-4">
+                <figure class="m-0 position-relative rounded-3 border">
+                  <img src="../images/shop-2.jpg" alt="Product" class="w-100 rounded-3">
+                  <span class="position-absolute fs-4 weight">
+                    $<span class="price">99</span>
+                  </span>
+                  <span style="bottom: -20px;" class="shadow position-absolute translate-middle-x start-50 bg-blue 
+                                                text-white p-2 rounded-2 text-center w-75 weight fs-5">Blue Hospital
+                    Stretcher
+                  </span>
+                  <button data-price="99" class="addBtn opacity-0  btn position-absolute text-white bg-color">
+                    <i class="fa-solid fa-cart-shopping me-2"></i> Add to cart
+                  </button>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-hightToLow" role="tabpanel" aria-labelledby="pills-hightToLow-tab"
+            tabindex="0">
+            <!-- Products -->
+            <div class="row">
+              <!-- Product 2 -->
+              <div class="col-12 col-md-6 col-lg-4 p-3 mb-4">
+                <figure class="m-0 position-relative rounded-3 border">
+                  <img src="../images/shop-2.jpg" alt="Product" class="w-100 rounded-3">
+                  <span class="position-absolute fs-4 weight">
+                    $<span class="price">99</span>
+                  </span>
+                  <span style="bottom: -20px;"
+                    class="shadow position-absolute translate-middle-x start-50 bg-blue 
+                                                                        text-white p-2 rounded-2 text-center w-75 weight fs-5">Blue Hospital
+                    Stretcher
+                  </span>
+                  <button data-price="99" class="addBtn opacity-0  btn position-absolute text-white bg-color">
+                    <i class="fa-solid fa-cart-shopping me-2"></i> Add to cart
+                  </button>
+                </figure>
+              </div>
+              <!-- Product 7 -->
+              <div class="col-12 col-md-6 col-lg-4 p-3 mb-4 mb-md-0">
+                <figure class="m-0 position-relative rounded-3 border">
+                  <img src="../images/shop-7.jpg" alt="Product" class="w-100 rounded-3">
+                  <span class="position-absolute fs-4 weight">
+                    $<span class="price">79</span>
+                  </span>
+                  <span style="bottom: -20px;"
+                    class="shadow position-absolute translate-middle-x start-50 bg-blue 
+                                                                        text-white p-2 rounded-2 text-center w-75 weight fs-5">Medical Stethoscope
+                  </span>
+                  <button data-price="79" class="addBtn opacity-0  btn position-absolute text-white bg-color">
+                    <i class="fa-solid fa-cart-shopping me-2"></i> Add to cart
+                  </button>
+                </figure>
+              </div>
+              <!-- Product 8 -->
+              <div class="col-12 col-md-6 col-lg-4 p-3">
+                <figure class="m-0 position-relative rounded-3 border">
+                  <img src="../images/shop-8.jpg" alt="Product" class="w-100 rounded-3">
+                  <span class="position-absolute fs-4 weight">
+                    $<span class="price">79</span>
+                  </span>
+                  <span style="bottom: -20px;"
+                    class="shadow position-absolute translate-middle-x start-50 bg-blue 
+                                                                        text-white p-2 rounded-2 text-center w-75 weight fs-5">Medical X-Ray
+                    Scanner
+                  </span>
+                  <button data-price="79" class="addBtn opacity-0  btn position-absolute text-white bg-color">
+                    <i class="fa-solid fa-cart-shopping me-2"></i> Add to cart
+                  </button>
+                </figure>
+              </div>
+              <!-- Product 4 -->
+              <div class="col-12 col-md-6 col-lg-4 p-3 mb-4">
+                <figure class="m-0 position-relative rounded-3 border">
+                  <img src="../images/shop-4.jpg" alt="Product" class="w-100 rounded-3">
+                  <span class="position-absolute fs-4 weight">
+                    $<span class="price">69</span>
+                  </span>
+                  <span style="bottom: -20px;"
+                    class="shadow position-absolute translate-middle-x start-50 bg-blue 
+                                                                        text-white p-2 rounded-2 text-center w-75 weight fs-5">Dentistry Chair
+                  </span>
+                  <button data-price="69" class="addBtn opacity-0  btn position-absolute text-white bg-color">
+                    <i class="fa-solid fa-cart-shopping me-2"></i> Add to cart
+                  </button>
+                </figure>
+              </div>
+              <!-- Product 6 -->
+              <div class="col-12 col-md-6 col-lg-4 p-3 mb-4">
+                <figure class="m-0 position-relative rounded-3 border">
+                  <img src="../images/shop-6.jpg" alt="Product" class="w-100 rounded-3">
+                  <span class="position-absolute fs-4 weight">
+                    $<span class="price">47</span>
+                  </span>
+                  <span style="bottom: -20px;"
+                    class="shadow position-absolute translate-middle-x start-50 bg-blue 
+                                                                        text-white p-2 rounded-2 text-center w-75 weight fs-5">Hospital Privacy
+                    Screen
+                  </span>
+                  <button data-price="47" class="addBtn opacity-0  btn position-absolute text-white bg-color">
+                    <i class="fa-solid fa-cart-shopping me-2"></i> Add to cart
+                  </button>
+                </figure>
+              </div>
+              <!-- Product 5 -->
+              <div class="col-12 col-md-6 col-lg-4 p-3 mb-4">
+                <figure class="m-0 position-relative rounded-3 border">
+                  <img src="../images/shop-5.jpg" alt="Product" class="w-100 rounded-3">
+                  <span class="position-absolute fs-4 weight">
+                    $<span class="price">44</span>
+                  </span>
+                  <span style="bottom: -20px;" class="shadow position-absolute translate-middle-x start-50 bg-blue 
+                                            text-white p-2 rounded-2 text-center w-75 weight fs-5">Doctor Stethoscope
+                  </span>
+                  <button data-price="44" class="addBtn opacity-0  btn position-absolute text-white bg-color">
+                    <i class="fa-solid fa-cart-shopping me-2"></i> Add to cart
+                  </button>
+                </figure>
+              </div>
+              <!-- Product 3 -->
+              <div class="col-12 col-md-6 col-lg-4 p-3 mb-4">
+                <figure class="m-0 position-relative rounded-3 border">
+                  <img src="../images/shop-3.jpg" alt="Product" class="w-100 rounded-3">
+                  <span class="position-absolute fs-4 weight">
+                    $<span class="price">39</span>
+                  </span>
+                  <span style="bottom: -20px;"
+                    class="shadow position-absolute translate-middle-x start-50 bg-blue 
+                                                                        text-white p-2 rounded-2 text-center w-75 weight fs-5">C-Arm X-ray Machine
+                  </span>
+                  <button data-price="39" class="addBtn opacity-0  btn position-absolute text-white bg-color">
+                    <i class="fa-solid fa-cart-shopping me-2"></i> Add to cart
+                  </button>
+                </figure>
+              </div>
+              <!-- Product -->
+              <div class="col-12 col-md-6 col-lg-4 p-3">
+                <figure class="m-0 position-relative rounded-3 border">
+                  <img src="../images/shop-1.jpg" alt="Product" class="w-100 rounded-3">
+                  <span class="position-absolute fs-4 weight">
+                    $<span class="price">29</span>
+                  </span>
+                  <span style="bottom: -20px;"
+                    class="shadow position-absolute translate-middle-x start-50 bg-blue 
+                                                                        text-white p-2 rounded-2 text-center w-75 weight fs-5">Blood Bag
+                  </span>
+                  <button data-price="29" class="addBtn opacity-0  btn position-absolute text-white bg-color">
+                    <i class="fa-solid fa-cart-shopping me-2"></i> Add to cart
+                  </button>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-topRated" role="tabpanel" aria-labelledby="pills-topRated-tab"
+            tabindex="0">
+            <!-- Products -->
+            <div class="row">
+              <!-- Product 7 -->
+              <div class="col-12 col-md-6 col-lg-4 p-3 mb-4 mb-md-0">
+                <figure class="m-0 position-relative rounded-3 border">
+                  <img src="../images/shop-7.jpg" alt="Product" class="w-100 rounded-3">
+                  <span class="position-absolute fs-4 weight">
+                    $<span class="price">79</span>
+                  </span>
+                  <span style="bottom: -20px;" class="shadow position-absolute translate-middle-x start-50 bg-blue 
+                      text-white p-2 rounded-2 text-center w-75 weight fs-5">Medical Stethoscope
+                  </span>
+                  <button data-price="79" class="addBtn opacity-0  btn position-absolute text-white bg-color">
+                    <i class="fa-solid fa-cart-shopping me-2"></i> Add to cart
+                  </button>
+                </figure>
+              </div>
+              <!-- Product 2 -->
+              <div class="col-12 col-md-6 col-lg-4 p-3 mb-4">
+                <figure class="m-0 position-relative rounded-3 border">
+                  <img src="../images/shop-2.jpg" alt="Product" class="w-100 rounded-3">
+                  <span class="position-absolute fs-4 weight">
+                    $<span class="price">99</span>
+                  </span>
+                  <span style="bottom: -20px;"
+                    class="shadow position-absolute translate-middle-x start-50 bg-blue 
+                                                                    text-white p-2 rounded-2 text-center w-75 weight fs-5">Blue Hospital Stretcher
+                  </span>
+                  <button data-price="99" class="addBtn opacity-0  btn position-absolute text-white bg-color">
+                    <i class="fa-solid fa-cart-shopping me-2"></i> Add to cart
+                  </button>
+                </figure>
+              </div>
+              <!-- Product 8 -->
+              <div class="col-12 col-md-6 col-lg-4 p-3">
+                <figure class="m-0 position-relative rounded-3 border">
+                  <img src="../images/shop-8.jpg" alt="Product" class="w-100 rounded-3">
+                  <span class="position-absolute fs-4 weight">
+                    $<span class="price">79</span>
+                  </span>
+                  <span style="bottom: -20px;"
+                    class="shadow position-absolute translate-middle-x start-50 bg-blue 
+                                                                    text-white p-2 rounded-2 text-center w-75 weight fs-5">Medical X-Ray Scanner
+                  </span>
+                  <button data-price="79" class="addBtn opacity-0  btn position-absolute text-white bg-color">
+                    <i class="fa-solid fa-cart-shopping me-2"></i> Add to cart
+                  </button>
+                </figure>
+              </div>
+              <!-- Product 6 -->
+              <div class="col-12 col-md-6 col-lg-4 p-3 mb-4">
+                <figure class="m-0 position-relative rounded-3 border">
+                  <img src="../images/shop-6.jpg" alt="Product" class="w-100 rounded-3">
+                  <span class="position-absolute fs-4 weight">
+                    $<span class="price">47</span>
+                  </span>
+                  <span style="bottom: -20px;"
+                    class="shadow position-absolute translate-middle-x start-50 bg-blue 
+                                                                    text-white p-2 rounded-2 text-center w-75 weight fs-5">Hospital Privacy Screen
+                  </span>
+                  <button data-price="47" class="addBtn opacity-0  btn position-absolute text-white bg-color">
+                    <i class="fa-solid fa-cart-shopping me-2"></i> Add to cart
+                  </button>
+                </figure>
+              </div>
+              <!-- Product 4 -->
+              <div class="col-12 col-md-6 col-lg-4 p-3 mb-4">
+                <figure class="m-0 position-relative rounded-3 border">
+                  <img src="../images/shop-4.jpg" alt="Product" class="w-100 rounded-3">
+                  <span class="position-absolute fs-4 weight">
+                    $<span class="price">69</span>
+                  </span>
+                  <span style="bottom: -20px;" class="shadow position-absolute translate-middle-x start-50 bg-blue 
+                                        text-white p-2 rounded-2 text-center w-75 weight fs-5">Dentistry Chair
+                  </span>
+                  <button data-price="69" class="addBtn opacity-0  btn position-absolute text-white bg-color">
+                    <i class="fa-solid fa-cart-shopping me-2"></i> Add to cart
+                  </button>
+                </figure>
+              </div>
+              <!-- Product 5 -->
+              <div class="col-12 col-md-6 col-lg-4 p-3 mb-4">
+                <figure class="m-0 position-relative rounded-3 border">
+                  <img src="../images/shop-5.jpg" alt="Product" class="w-100 rounded-3">
+                  <span class="position-absolute fs-4 weight">
+                    $<span class="price">44</span>
+                  </span>
+                  <span style="bottom: -20px;" class="shadow position-absolute translate-middle-x start-50 bg-blue 
+                                        text-white p-2 rounded-2 text-center w-75 weight fs-5">Doctor Stethoscope
+                  </span>
+                  <button data-price="44" class="addBtn opacity-0  btn position-absolute text-white bg-color">
+                    <i class="fa-solid fa-cart-shopping me-2"></i> Add to cart
+                  </button>
+                </figure>
+              </div>
+              <!-- Product 3 -->
+              <div class="col-12 col-md-6 col-lg-4 p-3 mb-4">
+                <figure class="m-0 position-relative rounded-3 border">
+                  <img src="../images/shop-3.jpg" alt="Product" class="w-100 rounded-3">
+                  <span class="position-absolute fs-4 weight">
+                    $<span class="price">39</span>
+                  </span>
+                  <span style="bottom: -20px;"
+                    class="shadow position-absolute translate-middle-x start-50 bg-blue 
+                                                                    text-white p-2 rounded-2 text-center w-75 weight fs-5">C-Arm X-ray Machine
+                  </span>
+                  <button data-price="39" class="addBtn opacity-0  btn position-absolute text-white bg-color">
+                    <i class="fa-solid fa-cart-shopping me-2"></i> Add to cart
+                  </button>
+                </figure>
+              </div>
+              <!-- Product -->
+              <div class="col-12 col-md-6 col-lg-4 p-3">
+                <figure class="m-0 position-relative rounded-3 border">
+                  <img src="../images/shop-1.jpg" alt="Product" class="w-100 rounded-3">
+                  <span class="position-absolute fs-4 weight">
+                    $<span class="price">29</span>
+                  </span>
+                  <span style="bottom: -20px;"
+                    class="shadow position-absolute translate-middle-x start-50 bg-blue 
+                                                                    text-white p-2 rounded-2 text-center w-75 weight fs-5">Blood Bag
+                  </span>
+                  <button data-price="29" class="addBtn opacity-0  btn position-absolute text-white bg-color">
+                    <i class="fa-solid fa-cart-shopping me-2"></i> Add to cart
+                  </button>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Content -->
+        <section class="contentFoot col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+          <figure class="fit">
+            <img src="../images/logo2x.png" alt="Logo">
+          </figure>
+          <p class="pt-2 opacity-75 text-blue">
+            A full spectrum multi-specialty medical office covering Cardiology,
+            Neurology, Family Medicine, Internal Medicine, Child and Adult Psychiatry.
+          </p>
+          <p class="pt-5 text-blue opacity-50">Copyright 2024 - All Rights Reserved.</p>
+        </section>
+        <!-- Departments -->
+        <section class="departmentsFoot col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+          <h5 class="weight">Departments</h5>
+          <ul class="list-unstyled mt-4 ps-2">
+            <!-- Item -->
+            <li class="text-black-50 fit">
+              <i class="fa-solid fa-arrow-right-long me-2"></i> Cardiology Clinic
+            </li>
+            <!-- Item -->
+            <li class="text-black-50 fit my-3">
+              <i class="fa-solid fa-arrow-right-long me-2"></i> Dentistery Clinic
+            </li>
+            <!-- Item -->
+            <li class="text-black-50 fit">
+              <i class="fa-solid fa-arrow-right-long me-2"></i> Urology Clinic
+            </li>
+            <!-- Item -->
+            <li class="text-black-50 fit my-3">
+              <i class="fa-solid fa-arrow-right-long me-2"></i> Dermatology Clinic
+            </li>
+            <!-- Item -->
+            <li class="text-black-50 fit">
+              <i class="fa-solid fa-arrow-right-long me-2"></i> Other Clinics
+            </li>
+          </ul>
+        </section>
+        <!-- Contact Info -->
+        <section class="contactInfo col-12 col-md-8 col-lg-4 bg-white mx-auto mx-lg-0 rounded-5 shadow p-5">
+          <p>Contact Info</p>
+          <!-- Location -->
+          <div class="row align-items-center py-4">
+            <i class="fa-solid fa-earth-americas main-color col-sm-12 col-md-2 fs-2"></i>
+            <h5 class="weight col-sm-12 col-md-10">
+              No.23 48th Ave. Westwood. <br> <span class="d-block fit mt-2">New York 10521</span>
+            </h5>
+          </div>
+          <!-- Call -->
+          <div class="row align-items-center pt-4">
+            <i class="fa-solid fa-phone-volume main-color col-sm-12 col-md-2 fs-2"></i>
+            <h5 class="weight col-sm-12 col-md-10">
+              <a href="tel:+1(800) 345 678" class="text-decoration-none text-black">+1(800) 345 678</a>
+              <br>
+              <a href="tel:+1(800) 123 789" class="d-block fit mt-2 text-black text-decoration-none">+1(800) 123 789</a>
+            </h5>
+          </div>
+        </section>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/shop.js"></script>
+</body>
+
+</html>

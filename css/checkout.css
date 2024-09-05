@@ -1,0 +1,4 @@
+table tfoot td {
+  border: 1px solid lightgrey;
+  padding: 15px 25px !important;
+}

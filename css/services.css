@@ -1,0 +1,132 @@
+main .mainTitle {
+  margin-bottom: 0;
+}
+/* Types of services section */
+.servicesTypes .container .row div figure img {
+  max-width: 150px;
+}
+
+.servicesTypes .container .row div figure:hover {
+  transform: translateY(-20px);
+  cursor: pointer;
+}
+
+.servicesTypes .container .row div figure:hover img {
+  background-color: var(--blue) !important;
+  transition-duration: 0.3s;
+  transform: rotateY(360deg);
+}
+
+.servicesTypes .container .row div figure:hover p {
+  color: var(--main-color) !important;
+}
+
+/* Packeges Section */
+.packages .packagesHead {
+  padding: 100px 0 150px;
+}
+
+.packages .packagesHead h2 {
+  font-size: 46px;
+}
+
+/* Container of packages section */
+.packages .container .row .package {
+  top: -100px;
+}
+
+.packages .container .row .packagePro {
+  top: -140px;
+}
+
+.packages .container .row .package:hover {
+  top: -120px;
+}
+
+.packages .container .row .packagePro:hover {
+  top: -160px;
+}
+
+.packages .container .row .package .price {
+  font-size: 56px;
+}
+
+.packages .container .packagePro .price {
+  font-size: 60px;
+}
+
+.packages .container .package .btn {
+  background-color: var(--blue);
+  color: var(--white);
+  border-radius: 30px;
+  height: fit-content;
+  padding: 12px 30px;
+}
+
+.packages .container .packagePro .btn {
+  background-color: var(--white);
+  color: var(--blue);
+}
+
+.packages .container .packagePro .btn:hover {
+  background-color: var(--blue) !important;
+  color: var(--white) !important;
+}
+
+/* Make an appointment */
+.makeAppointment .container .row form .btn:hover {
+  background-color: var(--white) !important;
+  color: var(--blue) !important;
+}
+
+/* Images Section */
+.imagesSec .container .row figure span {
+  position: absolute;
+  background-color: var(--blue);
+  color: var(--white);
+  width: 130px;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 5px 0;
+  border-radius: 5px;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  cursor: default;
+  opacity: 0;
+}
+
+.imagesSec .container .row figure:hover span {
+  opacity: 1;
+}
+
+@media (width >= 764px) {
+  .imagesSec .container .row figure {
+    width: calc(90% / 5);
+  }
+}
+
+@media (width >= 992px) {
+  .servicesTypes .container .row div {
+    width: calc(90% / 5) !important;
+  }
+
+  .makeAppointment .container {
+    height: 1000px;
+  }
+
+  .makeAppointment .container .row figure {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -100px;
+  }
+
+  .makeAppointment .container .row form {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

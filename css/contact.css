@@ -1,0 +1,9 @@
+.info .container .row .emailLink a figure {
+  width: 80px;
+  height: 80px;
+}
+
+.info .container .row .emailLink a:hover figure {
+  background-color: var(--blue) !important;
+  color: var(--white) !important;
+}

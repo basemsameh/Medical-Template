@@ -1,0 +1,54 @@
+table thead th {
+  background-color: #eee !important;
+}
+
+table thead th,
+table tbody td {
+  border: 1px solid lightgrey;
+  padding: 15px 25px !important;
+}
+
+.removeBtn {
+  cursor: pointer;
+}
+
+.notEmpty .container {
+  max-width: 100% !important;
+  overflow-x: scroll;
+}
+
+.notEmpty .container .table {
+  min-width: 840px !important;
+}
+
+tfoot td form input {
+  border: 1px solid var(--main-color);
+}
+
+tfoot td form input:focus {
+  outline: none;
+}
+
+.cartTotals {
+  width: 100% !important;
+}
+
+@media (width >= 880px) {
+  .notEmpty .container {
+    overflow: initial;
+  }
+}
+
+@media (width >= 992px) {
+  .cartTotals {
+    width: 700px !important;
+    margin-left: auto;
+  }
+}
+
+@media (width >= 1024px) {
+  .notEmpty .container {
+    width: 90%;
+    max-width: 90% !important;
+  }
+}
